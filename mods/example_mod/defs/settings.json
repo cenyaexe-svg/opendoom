@@ -1,0 +1,4 @@
+{
+  "ammo_max": {"cells": 300},
+  "player_start": {"weapons": ["fist", "pistol", "plasma_pistol"], "ammo": {"bullets": 50, "cells": 120}}
+}

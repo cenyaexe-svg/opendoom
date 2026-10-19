@@ -1,0 +1,15 @@
+{
+  "stimpack":     {"type": "health", "amount": 10, "max": 100, "sprite": "stimpack", "message": "Picked up a stimpack."},
+  "medikit":      {"type": "health", "amount": 25, "max": 100, "sprite": "medikit", "message": "Picked up a medikit."},
+  "health_bonus": {"type": "health", "amount": 1, "max": 200, "sprite": "health_bonus", "message": "Health bonus."},
+  "armor_bonus":  {"type": "armor", "amount": 1, "armor_type": 1, "max": 200, "sprite": "armor_bonus", "message": "Armor bonus."},
+  "green_armor":  {"type": "armor", "amount": 100, "armor_type": 1, "max": 100, "sprite": "green_armor", "message": "Picked up the armor."},
+  "blue_armor":   {"type": "armor", "amount": 200, "armor_type": 2, "max": 200, "sprite": "blue_armor", "message": "Picked up the mega armor!"},
+  "clip":         {"type": "ammo", "ammo": "bullets", "amount": 10, "sprite": "clip", "message": "Picked up a clip."},
+  "shells":       {"type": "ammo", "ammo": "shells", "amount": 4, "sprite": "shells", "message": "Picked up shotgun shells."},
+  "shotgun":      {"type": "weapon", "weapon": "shotgun", "ammo_amount": 8, "sprite": "shotgun_pickup", "message": "You got the shotgun!", "sound": "weapon_pickup"},
+  "chaingun":     {"type": "weapon", "weapon": "chaingun", "ammo_amount": 20, "sprite": "chaingun_pickup", "message": "You got the chaingun!", "sound": "weapon_pickup"},
+  "key_red":      {"type": "key", "key": "red", "sprite": "key_red", "message": "Picked up a red keycard.", "sound": "weapon_pickup"},
+  "key_blue":     {"type": "key", "key": "blue", "sprite": "key_blue", "message": "Picked up a blue keycard.", "sound": "weapon_pickup"},
+  "key_yellow":   {"type": "key", "key": "yellow", "sprite": "key_yellow", "message": "Picked up a yellow keycard.", "sound": "weapon_pickup"}
+}

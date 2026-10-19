@@ -1,0 +1,18 @@
+{
+  "fist": {
+    "name": "Fist", "slot": 1, "ammo": null, "cycle_tics": 15, "damage": [2, 10], "melee": true,
+    "range": 64, "accurate_first_shot": true, "sprite": "fist", "flash_tics": 6, "sound": "punch", "noisy": false
+  },
+  "pistol": {
+    "name": "Pistol", "slot": 2, "ammo": "bullets", "cycle_tics": 14, "damage": [5, 3],
+    "accurate_first_shot": true, "sprite": "pistol", "flash_tics": 4, "sound": "pistol"
+  },
+  "shotgun": {
+    "name": "Shotgun", "slot": 3, "ammo": "shells", "cycle_tics": 57, "damage": [5, 3], "pellets": 7,
+    "accurate_first_shot": false, "sprite": "shotgun", "flash_tics": 8, "sound": "shotgun"
+  },
+  "chaingun": {
+    "name": "Chaingun", "slot": 4, "ammo": "bullets", "cycle_tics": 4, "damage": [5, 3],
+    "accurate_first_shot": true, "sprite": "chaingun", "flash_tics": 3, "sound": "pistol"
+  }
+}

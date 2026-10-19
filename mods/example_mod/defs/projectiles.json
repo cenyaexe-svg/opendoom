@@ -1,0 +1,6 @@
+{
+  "plasma_bolt": {
+    "sprite": "plasma", "explosion_sprite": "plasma_hit", "speed": 25, "radius": 6, "damage": [5, 8],
+    "sound_launch": null, "sound_hit": "explosion"
+  }
+}

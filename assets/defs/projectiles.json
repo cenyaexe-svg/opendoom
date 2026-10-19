@@ -1,0 +1,6 @@
+{
+  "imp_fireball": {
+    "sprite": "fireball", "explosion_sprite": "fireball_hit", "speed": 10, "radius": 6, "damage": [3, 8],
+    "sound_launch": "fireball", "sound_hit": "explosion"
+  }
+}

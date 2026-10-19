@@ -1,0 +1,16 @@
+{
+  "zombieman": {
+    "name": "Zombieman", "sprite": "zombieman", "health": 20, "speed": 8, "move_interval": 4,
+    "pain_chance": 200, "pain_tics": 6, "death_tics": 20,
+    "missile": "hitscan", "missile_damage": [3, 5], "windup_tics": 10, "recovery_tics": 8,
+    "sight_sound": "zombie_sight", "pain_sound": "zombie_pain", "death_sound": "zombie_death",
+    "attack_sound": "pistol", "drop": "clip"
+  },
+  "imp": {
+    "name": "Imp", "sprite": "imp", "health": 60, "speed": 8, "move_interval": 3,
+    "pain_chance": 200, "pain_tics": 4, "death_tics": 24,
+    "melee_damage": [3, 8], "missile": "projectile", "missile_projectile": "imp_fireball",
+    "windup_tics": 16, "recovery_tics": 6,
+    "sight_sound": "imp_sight", "pain_sound": "imp_pain", "death_sound": "imp_death", "attack_sound": "claw"
+  }
+}

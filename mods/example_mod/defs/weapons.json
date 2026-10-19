@@ -1,0 +1,6 @@
+{
+  "plasma_pistol": {
+    "name": "Plasma Pistol", "slot": 5, "ammo": "cells", "cycle_tics": 6, "damage": [5, 8],
+    "projectile": "plasma_bolt", "sprite": "pistol", "tint": [0.4, 0.8, 1.0], "flash_tics": 4, "sound": "plasma"
+  }
+}

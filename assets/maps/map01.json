@@ -1,0 +1,52 @@
+{
+  "name": "Phoenix Facility",
+  "next": null,
+  "sectors": [
+    {"polygon": [[0,0],[0,192],[256,192],[256,0]], "floor": 0, "ceiling": 128, "light": 176, "wall": "tech", "floor_tex": "tile", "ceil_tex": "panel"},
+    {"polygon": [[288,64],[288,128],[448,128],[448,64]], "floor": 0, "ceiling": 96, "light": 128, "wall": "metal", "floor_tex": "stone", "ceil_tex": "panel"},
+    {"polygon": [[256,64],[256,128],[288,128],[288,64]], "floor": 0, "ceiling": 0, "light": 160, "wall": "door", "floor_tex": "stone", "ceil_tex": "stone"},
+    {"polygon": [[448,256],[608,256],[608,128],[768,128],[768,-64],[640,-64],[640,64],[480,64],[480,-64],[448,-64]], "floor": 0, "ceiling": 160, "light": 160, "wall": "brick", "floor_tex": "stone", "ceil_tex": "panel"},
+    {"polygon": [[608,128],[608,256],[640,256],[640,128]], "floor": 16, "ceiling": 160, "light": 180, "wall": "step", "floor_tex": "tile", "ceil_tex": "panel"},
+    {"polygon": [[640,128],[640,256],[768,256],[768,128]], "floor": 32, "ceiling": 160, "light": 210, "wall": "step", "floor_tex": "tile", "ceil_tex": "panel"},
+    {"polygon": [[480,-64],[480,64],[640,64],[640,-64]], "floor": -16, "ceiling": 160, "light": 200, "wall": "metal", "floor_tex": "nukage", "ceil_tex": "panel", "damage": 5},
+    {"polygon": [[768,0],[768,64],[800,64],[800,0]], "floor": 0, "ceiling": 0, "light": 160, "wall": "lock_red", "floor_tex": "stone", "ceil_tex": "stone"},
+    {"polygon": [[800,0],[800,64],[992,64],[992,0]], "floor": 0, "ceiling": 96, "light": 144, "wall": "metal", "floor_tex": "stone", "ceil_tex": "panel"},
+    {"polygon": [[992,-32],[992,96],[1120,96],[1120,-32]], "floor": 0, "ceiling": 128, "light": 192, "wall": "tech", "floor_tex": "tile", "ceil_tex": "panel"},
+    {"polygon": [[96,-64],[96,0],[160,0],[160,-64]], "floor": 0, "ceiling": 128, "light": 176, "wall": "lift", "floor_tex": "lift", "ceil_tex": "panel", "tag": 1},
+    {"polygon": [[32,-64],[96,-64],[96,-96],[160,-96],[160,-64],[224,-64],[224,-256],[32,-256]], "floor": -64, "ceiling": 128, "light": 128, "wall": "stone", "floor_tex": "stone", "ceil_tex": "panel"},
+    {"polygon": [[96,-96],[96,-64],[160,-64],[160,-96]], "floor": -64, "ceiling": 128, "light": 128, "wall": "stone", "floor_tex": "stone", "ceil_tex": "panel"},
+    {"polygon": [[-32,64],[-32,128],[0,128],[0,64]], "floor": 0, "ceiling": 0, "light": 160, "wall": "tech", "floor_tex": "stone", "ceil_tex": "stone"},
+    {"polygon": [[-160,64],[-160,128],[-32,128],[-32,64]], "floor": 0, "ceiling": 96, "light": 96, "wall": "tech", "floor_tex": "stone", "ceil_tex": "panel", "secret": true}
+  ],
+  "line_props": [
+    {"from": [256,64], "to": [256,128], "special": {"action": "door"}},
+    {"from": [288,64], "to": [288,128], "special": {"action": "door"}},
+    {"from": [768,0],  "to": [768,64],  "special": {"action": "door", "key": "red"}},
+    {"from": [800,0],  "to": [800,64],  "special": {"action": "door", "key": "red"}},
+    {"from": [0,64],   "to": [0,128],   "special": {"action": "door"}},
+    {"from": [-32,64], "to": [-32,128], "special": {"action": "door"}},
+    {"from": [96,0],   "to": [160,0],   "special": {"action": "lift", "trigger": "walk", "tag": 1}},
+    {"from": [96,-64], "to": [160,-64], "special": {"action": "lift", "trigger": "walk", "tag": 1}},
+    {"from": [96,-96], "to": [160,-96], "special": {"action": "lift", "trigger": "walk", "tag": 1}},
+    {"from": [1120,-32], "to": [1120,96], "special": {"action": "exit"}, "textures": {"9": "exit_switch"}}
+  ],
+  "things": [
+    {"type": "player_start", "x": 128, "y": 96, "angle": 0},
+    {"type": "clip", "x": 60, "y": 40}, {"type": "clip", "x": 60, "y": 150},
+    {"type": "stimpack", "x": 200, "y": 30},
+    {"type": "zombieman", "x": 380, "y": 96, "angle": 180}, {"type": "clip", "x": 330, "y": 80},
+    {"type": "zombieman", "x": 560, "y": 160, "angle": 270}, {"type": "zombieman", "x": 700, "y": -30, "angle": 180},
+    {"type": "imp", "x": 600, "y": 100, "angle": 180}, {"type": "imp", "x": 520, "y": 200, "angle": 270},
+    {"type": "imp", "x": 700, "y": 200, "angle": 270},
+    {"type": "medikit", "x": 470, "y": 220}, {"type": "clip", "x": 720, "y": 20}, {"type": "clip", "x": 700, "y": 100},
+    {"type": "key_red", "x": 736, "y": 192},
+    {"type": "armor_bonus", "x": 660, "y": 150}, {"type": "armor_bonus", "x": 680, "y": 150}, {"type": "armor_bonus", "x": 700, "y": 150},
+    {"type": "shotgun", "x": 128, "y": -220}, {"type": "shells", "x": 60, "y": -220}, {"type": "shells", "x": 190, "y": -220},
+    {"type": "medikit", "x": 60, "y": -150}, {"type": "zombieman", "x": 128, "y": -190, "angle": 90},
+    {"type": "green_armor", "x": -120, "y": 96}, {"type": "medikit", "x": -90, "y": 80}, {"type": "shells", "x": -90, "y": 112},
+    {"type": "imp", "x": 900, "y": 32, "angle": 180}, {"type": "stimpack", "x": 850, "y": 32},
+    {"type": "chaingun", "x": 1010, "y": -10},
+    {"type": "imp", "x": 1060, "y": 0, "angle": 180}, {"type": "imp", "x": 1060, "y": 70, "angle": 180},
+    {"type": "zombieman", "x": 1090, "y": 30, "angle": 180}, {"type": "medikit", "x": 1010, "y": 80}
+  ]
+}

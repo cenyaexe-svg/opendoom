@@ -1,0 +1,9 @@
+{
+  "id": "example_mod",
+  "name": "Plasma Pistol and Angry Imps",
+  "version": "1.0",
+  "priority": 100,
+  "depends": [],
+  "script": null,
+  "description": "Adds a plasma pistol (projectile weapon), changes imp health and medikit strength. Data only, no code."
+}

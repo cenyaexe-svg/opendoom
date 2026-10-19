@@ -1,0 +1,7 @@
+{
+  "always_run": true,
+  "mouse_sensitivity": 0.12,
+  "start_map": "map01",
+  "ammo_max": {"bullets": 200, "shells": 50},
+  "player_start": {"health": 100, "armor": 0, "weapons": ["fist", "pistol"], "ammo": {"bullets": 50}}
+}
